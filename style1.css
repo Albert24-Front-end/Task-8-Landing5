@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* must have in any CSS file */
+    /* box-sizing: border-box; - почитать об этом */
+    color: #222;
+    font-family: "TT Hoves";
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: calc(11vw + 19px);
+}
+section {
+    padding: 0 calc(10.7vw - 16px);
+    position: relative;
+}
+.logo {
+    margin-top: calc(-0.3vw + 41px);
+     margin-bottom: calc(6.2vw + 4px);
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 161px;
+    margin-bottom: calc(3.1vw + 36px);
+}
+.title, .subtitle {
+    display: block;
+    font-size: calc(0.6vw + 14px); 
+}
+.subtitle {
+    font-weight: bolder;
+}
+h1 {
+    /* line height - межстрочный интервал */
+    font-family: "Chava", sans-serif;
+    src: url('ChavaRegular.woff');
+    font-size: calc(4.2vw + 26px);
+    margin-bottom: calc(2.2vw + 12px);
+    font-weight: 400;
+}
+.info_text {
+    font-size: calc(1vw + 16px);
+    max-width: calc(66.5vw + 79px);
+    max-height: calc(-6.6vw + 275px);
+    margin-bottom: 20px;
+}
+.primary, .secondary {
+    width: 328px;
+    height: 61px;
+    border-radius: 12px;
+    padding: 20px 0;
+    border: 1px solid #6E3ABA;
+    cursor: pointer;
+    font-size: 18px;
+}
+.primary {
+    background-color: #6E3ABA;
+    color: white;
+    margin-right: 30px;
+}
+.secondary {
+    color: #6E3ABA;
+    background-color: white
+}
+.info_wrapper{
+    background-image: url('../Task8/html_css_js.png');
+    background-position: right calc(6vw - 100px) top calc(4.9vw + 59px); 
+    background-repeat: no-repeat;
+    /* background-size: 30vw; */
+    background-size: calc(23..9vw + 89px);
+    position: absolute;
+    /* 30vw - 30% ширины экрана  */
+}
+@media ((min-width: 375px) and (max-width: 1279px)) {
+    .logo {
+        margin-top: calc(-0.3vw + 41px);
+        margin-bottom: calc(6.2vw + 4px);
+        width: 215.14px;
+        height: 30px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: calc(3.1vw + 36px);
+        gap: 30px;
+    }
+    .primary {
+            background-color: #6E3ABA;
+            color: white;
+            margin-bottom: 20px;
+        }
+    .info_wrapper{
+            background-image: url('../Task8/html_css_js.png');
+            background-position: right calc(6vw - 10px) top calc(4.9vw + 59px); 
+            background-repeat: no-repeat;
+            background-size: 47vw;
+            position: absolute;
+            padding: 0 0 0 calc(10.7vw - 16px);
+        }
+
+}
+.landing2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: calc(12.3vw - 50px);
+    margin-top: calc(6.5vw + 778px);
+}
+.landing2 h1 {
+    font-family: "TT Hoves";
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    line-height: 118%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: calc(48.7vw + 145px);
+    height: calc(6.2vw + 57px);
+    text-transform: uppercase;
+}
+.row1 {
+    display: flex;
+    align-items: baseline;
+    margin-top: calc(5.5vw + 19px); 
+    gap: 70px;
+    margin-bottom: calc(0.8vw + 37px);
+}
+.row2 {
+    display: flex;
+    gap: 88px;
+}
+.part1 {
+    width: calc(13.5vw + 278px);
+    height: calc(17.2vw + 285px);
+}
+.part2 {
+    width: calc(13.5vw + 278px);
+    height: calc(13vw + 301px);
+}
+.part3 {
+    width: calc(11.5vw + 285px);
+    /* height: calc(15.8vw + 266px); */
+}
+.part4 {
+    width: calc(16.5vw + 266px);
+    height: calc(14.5vw + 321px);
+}
+img.guy1, img.guy2, img.girl1, img.girl2 {
+    width: calc(3.3vw + 168px);
+    height: calc(3.3vw + 168px);
+    margin-bottom: 10px;
+}
+.headerJob {
+    text-transform: uppercase;
+    font-size: calc(1vw + 14px);
+    font-weight: 600;
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: calc(1.1vw + 6px);
+    width: calc(10.2vw + 290px);
+    /* height: calc(1.4vw + 20px); */
+}
+.part2 .headerJob {
+    height: calc(5.6vw + 4px)
+} 
+.textJob {
+    font-size: calc(1vw + 14px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    width: calc(13.5vw + 277px);
+    /* height: 228px; */
+}
+@media ((min-width: 375px) and (max-width: 1279px)) {
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 40px;
+    }
+    .row2 {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .landing2 {
+        margin-left: 23.5px;
+        padding-right: 0;
+    }
+
+}
+.landing3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6E3ABA;
+}
+.landing3 h3 {
+    color: white;
+    margin: calc(4.4vw + 23px) calc(30.8vw - 93px) calc(4.1vw + 5px) calc(30.8vw - 94px);
+    /* max-width: 676px; */
+    /* max-height: 61px; */
+    font-family: 'TT Hoves', sans-serif;
+    font-weight: 700;
+    font-size: calc(2vw + 27px);
+    font-variant: small-caps;
+    line-height: 118%;
+    text-align: center;
+    width: calc(38.2vw + 187px);
+}
+.countdown {
+    display: flex;
+    margin-left: calc(15.5vw - 34px);
+    margin-right: calc(18.1vw - 39px);
+    color: #2F1D4E;
+    width: calc(66.4vw + 73px);
+    height: calc(15.6vw + 20px);
+}
+.days, .hours, .minutes {
+    font-family: 'Chava', sans-serif;
+    font-weight: 400;
+    /* font-size: 174px; */
+    font-size: calc(12.6vw + 13px);
+    line-height: 107.5%;
+    width: calc(18.1vw + 19px);
+    height: calc(13.4vw+ 16px);
+    text-align: center;
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+.text {
+    font-family: 'TT Hoves', sans-serif;
+    /* font-size: 27px; */
+    font-size: calc(1.9vw + 3px);
+    font-weight: 500;
+    text-align: center;
+    line-height: 118%;
+    width: calc(5.1vw + 9px);
+    height: calc(2.2vw + 4px);
+}
+.days {
+    /* margin-left: 164px; */
+    margin-right: calc(6.4vw + 8px);
+}
+.hours {
+    margin-right: calc(5.6vw + 8px);
+}
+.btn {
+    color: #6E3ABA;
+    background-color: white;
+    width: 328px;
+    height: 61px;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin: calc(4.1vw + 5px) calc(46.9vw - 153px) calc(5.2vw + 21.5px) calc(53.1vw - 175px);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'TT Hoves', sans-serif;
+    border: 0;
+    line-height: 118%;
+} 
+@media ((min-width: 375px) and (max-width: 1279px)) {
+    .landing3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+    .h3 {
+        display: flex;
+        flex-direction: row;
+}
+}
+
+.landing5 {
+    margin-left: calc(10.7vw - 17px);
+    margin-top: calc(3vw + 52px);
+    padding: 0;
+}
+.landing5 h1 {
+    font-family: "TT Hoves";
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    line-height: 118%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(9.9vw + 7.2px);
+}
+.main-blocks div {
+    width: calc(8vw + 300px);
+    display: flex;
+    flex-direction: column;
+    gap: calc(1.1vw + 6px)
+}
+.main-blocks p {
+    font-family: "TT Hoves";
+    font-size: calc(1.1vw + 13.8px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+.main-blocks h3{
+    font-size: calc(1vw + 13px);
+    text-transform: uppercase;
+}
+
+
+.landing6 {
+    padding: 0 95px 0 120px;
+    }
+#container {
+    border: 2px black solid;
+    padding: calc(4.4vw + 23px) calc(4.9vw + 1px) calc(1.3vw + 18px);
+    position: relative;
+}
+#corner {
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -2px;   
+}
+#container h2 {
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    letter-spacing: 1%;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+#parent {
+    margin: calc(1.8vw + 17px) 0 calc(1.2vw + 10px);
+    font-size: calc(0.6vw + 14px);
+    font-weight: 400;
+    text-align: left;
+    line-height: 140%
+}
+.lessons {
+    border-bottom: 1px solid black;
+    padding-bottom: 24px;
+    margin-top: 24px;
+}
+.button {
+    background-color: #6E3ABA;
+    color: white;
+    font-size: calc(0.4vw + 12px);
+    font-weight: 500;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #6E3ABA;
+    cursor: pointer;
+    padding: 20px 0;
+    width: calc(10.6vw + 280px);
+}
+#phone {
+    display: none;
+    margin: 30px auto 0;
+}
+#desktop {
+    display: block;
+    margin: 0 auto;
+}
+@media ((min-width: 375px) and (max-width: 1279px)) {
+    #desktop {display: none;}
+    #phone {display: block;}
+    .landing6 {
+        margin: 0 23.5px;
+        padding: 0 0.5px;
+    }
+    #container {
+        border: 1px black solid;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    #corner {
+        width: 40px;
+        position: absolute;
+        top: -1.25px;
+        right: -1.25px;   
+    }
+    #parent {
+        margin: calc(1.8vw + 17px) 0 calc(1.2vw + 1px);
+        font-size: calc(0.6vw + 14px);
+        font-weight: 400;
+        text-align: left;
+        line-height: 140%
+    }
+}
